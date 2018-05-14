@@ -7,6 +7,7 @@ import os
 # Globale variabelen maken
 configfile_name = 'config.ini'
 
+
 # Deze functie maakt de configuratie file als deze nog niet bestaat
 def make_config(configfile):
     cfgfile = open(configfile, 'w')
@@ -14,6 +15,7 @@ def make_config(configfile):
     parser = configparser.ConfigParser()
     parser.add_section('filelocations')
     parser.set('filelocations', 'logfolder', '')
+    parser.set('filelocations', 'logfile', 'vsftpd.log')
     parser.write(cfgfile)
     cfgfile.close()
 
@@ -23,18 +25,16 @@ def read_config(configfile):
     parser = configparser.ConfigParser()
     parser.read(configfile)
     log_folder = parser.get('filelocations', 'logfolder')
-    return log_folder
+    log_file = parser.get('filelocations', 'logfile')
+    return log_folder, log_file
+
 
 def init_cfg():
-    # Kijk of config.ini al bestaat
-    if os.path.isfile(configfile_name):
-        # config.ini bestaat, dus lees deze uit
-        log_folder = read_config(configfile_name)
-        return log_folder
-
-    else:
-        # config.ini bestaat niet, dus maak deze en lees deze daarna uit
+    # Kijk of config.ini al bestaat of niet
+    if not os.path.isfile(configfile_name):
         make_config(configfile_name)
-        log_folder = read_config(configfile_name)
-        return log_folder
+
+    # config.ini waardes uitlezen en doorsturen
+    log_folder, log_file = read_config(configfile_name)
+    return log_folder, log_file
 
