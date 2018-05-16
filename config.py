@@ -5,7 +5,7 @@ import configparser
 import os
 
 # Globale variabelen maken
-configfile_name = 'config.ini'
+configfile_name = os.path.dirname(__file__) + '\config.ini'
 
 
 # Deze functie maakt de configuratie file als deze nog niet bestaat
