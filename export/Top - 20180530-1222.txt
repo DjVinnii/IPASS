@@ -1,0 +1,12 @@
+Top 10 downloads:
+
+1: /pub/CentOS7/Packages/filesystem-3.2-21.el7.x86_64.rpm (8 downloads)
+2: /pub/CentOS7/Packages/device-mapper-libs-1.02.140-8.el7.x86_64.rpm (7 downloads)
+3: /pub/CentOS7/Packages/NetworkManager-team-1.8.0-9.el7.x86_64.rpm (7 downloads)
+4: /pub/CentOS7/Packages/cronie-anacron-1.4.11-17.el7.x86_64.rpm (7 downloads)
+5: /pub/CentOS7/Packages/elfutils-default-yama-scope-0.168-8.el7.noarch.rpm (7 downloads)
+6: /pub/CentOS7/Packages/device-mapper-event-1.02.140-8.el7.x86_64.rpm (7 downloads)
+7: /pub/CentOS7/Packages/device-mapper-1.02.140-8.el7.x86_64.rpm (7 downloads)
+8: /pub/CentOS7/Packages/acl-2.2.51-12.el7.x86_64.rpm (7 downloads)
+9: /pub/CentOS7/Packages/crontabs-1.11-6.20121102git.el7.noarch.rpm (7 downloads)
+10: /pub/CentOS7/Packages/bind-license-9.9.4-50.el7.noarch.rpm (7 downloads)
