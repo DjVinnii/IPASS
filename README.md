@@ -4,8 +4,8 @@
 
 ### Vereisten
 
-Dit script is geschreven in python 3.6, het is verstandig om deze versie ook te  gebruiken om het script te draaien.
-Andere versies zouden ook kunnen werken, maar deze kunnen instabiel zijn.
+Dit script is geschreven in python 3.6, het is verstandig om deze versie ook te gebruiken om het script te draaien.
+Ouddere versiesv van python 3 zouden ook kunnen werken, maar deze kunnen instabiel zijn. ***Let op: dit script werkt niet met python 2***
 
 ### Installeren
 
@@ -14,7 +14,7 @@ Andere versies zouden ook kunnen werken, maar deze kunnen instabiel zijn.
 ```
 python main.py
 ```
-Als ook python 2 geïnstalleerd is, is het verstanding om specifiek python 3 aan te roepen. Dit kan als volgt:
+Als ook python 2 geïnstalleerd is, moet specifiek python 3 aangeroepen. Dit kan als volgt:
 ```
 python3 main.py
 ```
