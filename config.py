@@ -6,7 +6,14 @@ import configparser
 import os
 
 # Globale variabelen maken
-configfile_name = os.path.dirname(__file__) + '\config.ini'
+osname = os.name
+
+# Windows
+if osname == 'nt':
+    configfile_name = os.path.dirname(__file__) + '\config.ini'
+# Linux
+elif osname == 'posix':
+    configfile_name = os.path.dirname(__file__) + '/config.ini'
 
 
 # Deze functie maakt de configuratie file als deze nog niet bestaat
@@ -19,10 +26,23 @@ def make_config(configfile):
     parser.add_section('filelocations')
     parser.set('filelocations', 'logfolder', '')
     parser.set('filelocations', 'logfile', 'vsftpd.log')
-    parser.set('filelocations', 'exportfolder', os.path.dirname(__file__) + '\export')
+    # Windows
+    if osname == 'nt':
+        parser.set('filelocations', 'exportfolder', os.path.dirname(__file__) + '\export')
+    # Linux
+    elif osname == 'posix':
+        parser.set('filelocations', 'exportfolder', os.path.dirname(__file__) + '/export')
+
 
     # Folder aanmaken voor de exports
-    os.mkdir(os.path.dirname(__file__) + '\export')
+
+    # Windows
+    if osname == 'nt':
+        os.mkdir(os.path.dirname(__file__) + '\export')
+    # Linux
+    elif osname == 'posix':
+        os.mkdir(os.path.dirname(__file__) + '/export')
+
 
     # Config schrijven naar de config.ini
     parser.write(cfgfile)

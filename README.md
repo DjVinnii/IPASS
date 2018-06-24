@@ -5,7 +5,7 @@
 ### Vereisten
 
 Dit script is geschreven in python 3.6, het is verstandig om deze versie ook te gebruiken om het script te draaien.
-Ouddere versiesv van python 3 zouden ook kunnen werken, maar deze kunnen instabiel zijn. ***Let op: dit script werkt niet met python 2***
+Oudere versies van python 3 zouden ook kunnen werken, maar deze kunnen instabiel zijn. ***Let op: dit script werkt niet met python 2***
 
 ### Installeren
 
@@ -16,7 +16,7 @@ python main.py
 ```
 Als ook python 2 geïnstalleerd is, moet specifiek python 3 aangeroepen. Dit kan als volgt:
 ```
-python3 main.py
+python3.6 main.py
 ```
 3. Nadat het configuratie bestand aangemaakt is, kan deze naar wens aangepast worden. Dit configuratie bestand (config.ini) is te vinden in de zelfde map als de twee python scripts. <br><br>
 In config.ini zijn er 3 dingen die aangepast kunnen worden:
